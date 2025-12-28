@@ -59,7 +59,5 @@ async function registerRoutes() {
   }
 }
 
-// Register routes immediately
-await registerRoutes();
-
+// Routes will be registered lazily on first request
 export { api, API_BASENAME };
